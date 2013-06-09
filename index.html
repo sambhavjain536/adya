@@ -57,84 +57,16 @@
             </div>
             <h2>{{album.title}}</h2>
 
-            <ol>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-            </ol>
-            <ol>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-            </ol>
-            <ol>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-              <li>
-                <h3>Sample Song</h3>
-                <p>Feat. Von Suppe & Achrimides</p>
-              </li>
-            </ol>
+            {{#each trackList in album.trackLists}}
+              <ol>
+                {{#each track in trackList}}
+                <li>
+                  <h3>{{track.title}}</h3>
+                  <p>{{track.composer}}</p>
+                </li>
+                {{/each}}
+              </ol>
+            {{/each}}
           </div>
         </div>
       {{/each}}
