@@ -86,8 +86,12 @@ footer p {
 }
 
 .album {
-  margin: 0 0 50px 0;
+  padding: 0 0 50px 0;
   overflow: hidden;
+}
+
+.album:nth-of-type(2) {
+  background: url(../images/background-alt.png);
 }
 
 .album h2 {
