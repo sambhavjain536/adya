@@ -90,7 +90,7 @@ footer p {
   overflow: hidden;
 }
 
-.album:nth-of-type(2) {
+.album:nth-of-type(even) {
   background: url(../images/background-alt.png);
 }
 

@@ -49,11 +49,11 @@
     <div id="discography">
       <h1>Discography</h1>
 
-      {{#each album in model}}
+      {{#each album in model itemController="album"}}
         <div class="album">
           <div class="container">
             <div class="cover">
-              <img src="images/album.png" />
+              <img {{bindAttr src=coverImage }} />
             </div>
             <h2>{{album.title}}</h2>
 

@@ -16,6 +16,12 @@ App.DiscographyRoute = Ember.Route.extend({
   }
 });
 
+App.AlbumController = Ember.ObjectController.extend({
+  coverImage: function() {
+    return 'images/album-' + this.get('model').get('title').dasherize() + '.png';
+  }.property()
+});
+
 App.Store = DS.Store.extend({
   adapter: 'DS.FixtureAdapter'
 });
@@ -32,5 +38,16 @@ App.Album.FIXTURES = [
   {
     id: 2,
     title: 'Classic 2'
+  },
+  {
+    id: 3,
+    title: 'Classic Special'
+  },
+  { id: 4,
+    title: 'Best Classic'
+  },
+  {
+    id: 5,
+    title: 'Classic 3'
   }
 ];
