@@ -7,6 +7,38 @@ html {
   width: 940px;
 }
 
+header {
+  background: url(../images/header.png);
+  height: 72px;
+  margin: 32px 0 60px 0;
+  text-align: center;
+}
+
+header ul {
+  margin: 0;
+}
+
+header li {
+  display: inline;
+  margin: 0 15px;
+  line-height: 72px;
+  list-style: none;
+}
+
+header a {
+  color: #b2afa9;
+  text-decoration: none;
+}
+
+header a.active {
+  color: #000;
+}
+
+header img {
+  margin-top: -22px;
+  vertical-align: top;
+}
+
 footer {
   background: #b2afa9;
   clear: both;
@@ -14,28 +46,28 @@ footer {
   overflow: hidden;
 }
 
-ul {
+footer ul {
   float: left;
   margin: 0;
 }
 
-li {
+footer li {
   float: left;
   list-style: none;
   margin: 0 19px 0 0;
 }
 
-a {
+footer a {
   color: #d9d7d3;
   line-height: 62px;
   text-decoration: none;
 }
 
-a.active {
+footer a.active {
   color: #fff;
 }
 
-p {
+footer p {
   color: #d9d7d3;
   float: right;
   line-height: 62px;
