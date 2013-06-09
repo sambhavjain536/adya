@@ -73,3 +73,55 @@ footer p {
   line-height: 62px;
   margin: 0;
 }
+
+#discography {
+  clear: both;
+}
+
+#discography h1 {
+  color: #232322;
+  font-size: 28px;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.album {
+  margin: 0 0 50px 0;
+  overflow: hidden;
+}
+
+.album h2 {
+  color: #6d1b21;
+  font-size: 20px;
+}
+
+.album .cover {
+  float: left;
+  margin: 40px 0 0 0;
+  width: 160px;
+}
+
+.album ol {
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.album li {
+  border-bottom: 1px solid #e5e3e0;
+  border-color: rgba(203, 202, 197, .42);
+  list-style: none;
+  width: 220px;
+}
+
+.album h3 {
+  color: #232322;
+  font-size: 14px;
+  margin: 10px 0 3px 0;
+}
+
+.album p {
+  color: #a29f9a;
+  font-size: 12px;
+  margin: 0 0 6px 0;
+}
