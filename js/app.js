@@ -62,11 +62,13 @@ App.Album.FIXTURES = [
 
   },
   { id: 4,
-    title: 'Best Classic'
+    title: 'Best Classic',
+    tracks: [71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91]
   },
   {
     id: 5,
-    title: 'Classic 3'
+    title: 'Classic 3',
+    tracks: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]
   }
 ];
 
@@ -241,109 +243,299 @@ App.Track.FIXTURES = [
     title: 'Italian Symphony Krilasko',
     composer: 'F. Mendelssohn, Bartholdy'
   },
-{
-  id: 41,
-  title: 'Wings Of Summer',
-  composer: 'P. Sterman - E. Abrath'
-},
-{
-  id: 42,
-  title: 'Tritsch Tratsch Phaeromidos',
-  composer: 'J. Strauss - Son'
-},
-{
-  id: 43,
-  title: 'Out Of Africa Carafulia',
-  composer: 'W.A. Mozart'
-},
-{
-  id: 44,
-  title: 'Alla Turca Ahriahne',
-  composer: 'W.A. Mozart'
-},
-{
-  id: 45,
-  title: 'Light Cavalry Achrimides',
-  composer: 'F. Von Suppé'
-},
-{
-  id: 46,
-  title: 'Barcarolle Ourybova',
-  composer: 'J.Offenbach'
-},
-{
-  id: 47,
-  title: 'Toreador Atjenki',
-  composer: 'G. Bizet'
-},
-{
-  id: 48,
-  title: 'Symphony N° 40 Xophoratis',
-  composer: 'W.A. Mozart'
-},
-{
-  id: 49,
-  title: 'La Gazza Ladra Voladiche',
-  composer: 'G. Rossini'
-},
-{
-  id: 50,
-  title: 'Aïda Solaekride',
-  composer: 'G. Verdi'
-},
-{
-  id: 51,
-  title: 'La Primavera Soliveyra',
-  composer: 'A. Vivaldi'
-},
-{
-  id: 52,
-  title: 'Morning Mood Trevobima',
-  composer: 'E.H. Grieg'
-},
-{
-  id: 53,
-  title: 'The Emperor Muvagora',
-  composer: 'J. Strauss - Son'
-},
-{
-  id: 54,
-  title: 'Ode To Joy Imar It Heri',
-  composer: 'L. von Beethoven'
-},
-{
-  id: 55,
-  title: 'Romanza Zeyvolo',
-  composer: 'W.A. Mozart'
-},
-{
-  id: 56,
-  title: 'Orpheus In The Underworld Nagodus',
-  composer: 'J. Offenbach'
-},
-{
-  id: 57,
-  title: 'Dance Of The Hours Souraktoff',
-  composer: 'P. Sterman'
-},
-{
-  id: 58,
-  title: 'Walz Of The Flowers Quosibatu',
-  composer: 'P.I. Tchaikovsky'
-},
-{
-  id: 59,
-  title: 'Eine Kleine Nachtmusik Djagobe',
-  composer: 'W.A. Mozart'
-},
-{
-  id: 60,
-  title: 'Hungarian Dance Netonkla',
-  composer: 'J. brahms'
-},
-{
-  id: 61,
-  title: 'Halleluyah',
-  composer: 'Adya - Classic Pop Mix'
-}
+  {
+    id: 41,
+    title: 'Wings Of Summer',
+    composer: 'P. Sterman - E. Abrath'
+  },
+  {
+    id: 42,
+    title: 'Tritsch Tratsch Phaeromidos',
+    composer: 'J. Strauss - Son'
+  },
+  {
+    id: 43,
+    title: 'Out Of Africa Carafulia',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 44,
+    title: 'Alla Turca Ahriahne',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 45,
+    title: 'Light Cavalry Achrimides',
+    composer: 'F. Von Suppé'
+  },
+  {
+    id: 46,
+    title: 'Barcarolle Ourybova',
+    composer: 'J.Offenbach'
+  },
+  {
+    id: 47,
+    title: 'Toreador Atjenki',
+    composer: 'G. Bizet'
+  },
+  {
+    id: 48,
+    title: 'Symphony N° 40 Xophoratis',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 49,
+    title: 'La Gazza Ladra Voladiche',
+    composer: 'G. Rossini'
+  },
+  {
+    id: 50,
+    title: 'Aïda Solaekride',
+    composer: 'G. Verdi'
+  },
+  {
+    id: 51,
+    title: 'La Primavera Soliveyra',
+    composer: 'A. Vivaldi'
+  },
+  {
+    id: 52,
+    title: 'Morning Mood Trevobima',
+    composer: 'E.H. Grieg'
+  },
+  {
+    id: 53,
+    title: 'The Emperor Muvagora',
+    composer: 'J. Strauss - Son'
+  },
+  {
+    id: 54,
+    title: 'Ode To Joy Imar It Heri',
+    composer: 'L. von Beethoven'
+  },
+  {
+    id: 55,
+    title: 'Romanza Zeyvolo',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 56,
+    title: 'Orpheus In The Underworld Nagodus',
+    composer: 'J. Offenbach'
+  },
+  {
+    id: 57,
+    title: 'Dance Of The Hours Souraktoff',
+    composer: 'P. Sterman'
+  },
+  {
+    id: 58,
+    title: 'Walz Of The Flowers Quosibatu',
+    composer: 'P.I. Tchaikovsky'
+  },
+  {
+    id: 59,
+    title: 'Eine Kleine Nachtmusik Djagobe',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 60,
+    title: 'Hungarian Dance Netonkla',
+    composer: 'J. brahms'
+  },
+  {
+    id: 61,
+    title: 'Halleluyah',
+    composer: 'Adya - Classic Pop Mix'
+  },
+  {
+    id: 71,
+    title: 'Alhambra',
+    composer: 'F. Tarrega Eixea - P. Sterman - E. Abrath'
+  },
+  {
+    id: 72,
+    title: 'Homecoming From A Foreign Country Denvobe',
+    composer: 'F. Mendelssohn - Bartholdy'
+  },
+  {
+    id: 73,
+    title: 'Rhapsody Revangos',
+    composer: 'S.V. Rachmaninoff'
+  },
+  {
+    id: 74,
+    title: 'Wings Of Summer',
+    composer: 'P. Sterman - E. Abrath'
+  },
+  {
+    id: 75,
+    title: 'Rosamunde Celmanur',
+    composer: 'F. Schubert'
+  },
+  {
+    id: 76,
+    title: 'Jeux Interdits',
+    composer: 'P. Sterman - E. Abrath'
+  },
+  {
+    id: 77,
+    title: 'Pleasure Train Rosifora',
+    composer: 'J. Strauss - Son'
+  },
+  {
+    id: 78,
+    title: 'Light Cavalry Achrimides',
+    composer: 'F. Von Suppé'
+  },
+  {
+    id: 79,
+    title: 'Toreador Atjenki',
+    composer: 'G. Bizet'
+  },
+  {
+    id: 80,
+    title: 'Orpheus In The Underworld Nagodus',
+    composer: 'J. Offenbach'
+  },
+  {
+    id: 81,
+    title: 'Out Of Africa Carafulia',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 82,
+    title: 'Alla Turca Ahriahne',
+    composer: 'W.A. Mozart '
+  },
+  {
+    id: 83,
+    title: 'Tritsch Tratsch Phaeromidos',
+    composer: 'J. Strauss - Son'
+  },
+  {
+    id: 84,
+    title: 'Symphony N° 40 Xophoratis',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 85,
+    title: 'Hungarian Dance N° 5 Netonkla',
+    composer: 'J. Brahms'
+  },
+  {
+    id: 86,
+    title: 'La Gazza Ladra Voladiche',
+    composer: 'G. Rossini'
+  },
+  {
+    id: 87,
+    title: 'The Emperor Muvagora',
+    composer: 'J. Strauss - Son'
+  },
+  {
+    id: 88,
+    title: 'La Primavera Soliveyra',
+    composer: 'A. Vivaldi'
+  },
+  {
+    id: 89,
+    title: 'Aïda Solaekride',
+    composer: 'G. Verdi'
+  },
+  {
+    id: 90,
+    title: 'Eine Kleine Nachtmusik Djagobe',
+    composer: 'W.A. Mozart'
+  },
+  {
+    id: 91,
+    title: 'Liefde Is ...',
+    composer: 'Bonus track - Adya'
+  },
+  {
+    id: 101,
+    title: 'Funiculi Funiculà',
+    composer: 'Luigi Denza'
+  },
+  {
+    id: 102,
+    title: 'Libiamo (Ne’ Lieti Calici)',
+    composer: 'La Traviata • Giuseppe Verdi'
+  },
+  {
+    id: 103,
+    title: 'Largo Al Factotum',
+    composer: 'Il Barbiere Di Seviglia • Gioacchino Rossini'
+  },
+  {
+    id: 104,
+    title: 'Der Vogelfänger',
+    composer: 'Die Zauberflöte • Wolfgang Amadeus Mozart'
+  },
+  {
+    id: 105,
+    title: 'Prelude Act 1',
+    composer: 'La Traviata • Giuseppe Verdi'
+  },
+  {
+    id: 106,
+    title: 'La Donna È Mobile',
+    composer: 'Rigoletto • Giuseppe Verdi'
+  },
+  {
+    id: 107,
+    title: 'O Mio Babbino Caro',
+    composer: 'Gianni Schicchi • Giacomo Puccini'
+  },
+  {
+    id: 108,
+    title: 'Ouverture',
+    composer: 'William Tell • Gioacchino Rossini'
+  },
+  {
+    id: 109,
+    title: 'Va, Pensiero',
+    composer: 'Nabucco • Giuseppe Verdi'
+  },
+  {
+    id: 110,
+    title: 'Ouverture',
+    composer: 'Il Barbiere Di Seviglia • Gioacchino Rossini'
+  },
+  {
+    id: 111,
+    title: 'The Pearl Fishers',
+    composer: 'Au Fond Du Temple Saint • Georges Bizet'
+  },
+  {
+    id: 112,
+    title: 'Non Piu Andrai',
+    composer: 'Le Nozze Di Figaro • Wolfgang Amadeus Mozart'
+  },
+  {
+    id: 113,
+    title: 'Plaisir D’Amour',
+    composer: 'Jean-Paul-Egide Martini'
+  },
+  {
+    id: 114,
+    title: 'Di Provenza Il Mar, Il Suol',
+    composer: 'La Traviata • Giuseppe Verdi'
+  },
+  {
+    id: 115,
+    title: 'Voi Che Sapete',
+    composer: 'Le Nozze di Figaro • Wolfgang Amadeus Mozart'
+  },
+  {
+    id: 116,
+    title: 'The Bohemian Girl',
+    composer: 'I Dreamt I Dwelt In Marble Halls • Michael William Balfe'
+  },
+  {
+    id: 117,
+    Title: 'Adya Medley',
+    composer: '• Stars and Stripes • John Philip de Sousa • Mein Kleiner Gardeoffizier • Robert Stolz/Walter Reisch • Einzugsmarsch (Der Zigeunerbaron Opus 327) • Johann Strauss jr. • Radetzky Marsch • Johann Strauss sr.'
+  }
 ];
