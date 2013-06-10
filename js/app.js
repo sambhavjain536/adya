@@ -55,7 +55,9 @@ App.Album.FIXTURES = [
   },
   {
     id: 3,
-    title: 'Classic Special'
+    title: 'Classic Special',
+    tracks: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61]
+
   },
   { id: 4,
     title: 'Best Classic'
@@ -236,5 +238,110 @@ App.Track.FIXTURES = [
     id: 37,
     title: 'Italian Symphony Krilasko',
     composer: 'F. Mendelssohn, Bartholdy'
-  }
+  },
+{
+  id: 41,
+  title: 'Wings Of Summer',
+  composer: 'P. Sterman - E. Abrath'
+},
+{
+  id: 42,
+  title: 'Tritsch Tratsch Phaeromidos',
+  composer: 'J. Strauss - Son'
+},
+{
+  id: 43,
+  title: 'Out Of Africa Carafulia',
+  composer: 'W.A. Mozart'
+},
+{
+  id: 44,
+  title: 'Alla Turca Ahriahne',
+  composer: 'W.A. Mozart'
+},
+{
+  id: 45,
+  title: 'Light Cavalry Achrimides',
+  composer: 'F. Von Suppé'
+},
+{
+  id: 46,
+  title: 'Barcarolle Ourybova',
+  composer: 'J.Offenbach'
+},
+{
+  id: 47,
+  title: 'Toreador Atjenki',
+  composer: 'G. Bizet'
+},
+{
+  id: 48,
+  title: 'Symphony N° 40 Xophoratis',
+  composer: 'W.A. Mozart'
+},
+{
+  id: 49,
+  title: 'La Gazza Ladra Voladiche',
+  composer: 'G. Rossini'
+},
+{
+  id: 50,
+  title: 'Aïda Solaekride',
+  composer: 'G. Verdi'
+},
+{
+  id: 51,
+  title: 'La Primavera Soliveyra',
+  composer: 'A. Vivaldi'
+},
+{
+  id: 52,
+  title: 'Morning Mood Trevobima',
+  composer: 'E.H. Grieg'
+},
+{
+  id: 53,
+  title: 'The Emperor Muvagora',
+  composer: 'J. Strauss - Son'
+},
+{
+  id: 54,
+  title: 'Ode To Joy Imar It Heri',
+  composer: 'L. von Beethoven'
+},
+{
+  id: 55,
+  title: 'Romanza Zeyvolo',
+  composer: 'W.A. Mozart'
+},
+{
+  id: 56,
+  title: 'Orpheus In The Underworld Nagodus',
+  composer: 'J. Offenbach'
+},
+{
+  id: 57,
+  title: 'Dance Of The Hours Souraktoff',
+  composer: 'P. Sterman'
+},
+{
+  id: 58,
+  title: 'Walz Of The Flowers Quosibatu',
+  composer: 'P.I. Tchaikovsky'
+},
+{
+  id: 59,
+  title: 'Eine Kleine Nachtmusik Djagobe',
+  composer: 'W.A. Mozart'
+},
+{
+  id: 60,
+  title: 'Hungarian Dance Netonkla',
+  composer: 'J. brahms'
+},
+{
+  id: 61,
+  title: 'Halleluyah',
+  composer: 'Adya - Classic Pop Mix'
+}
 ];
