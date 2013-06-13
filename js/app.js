@@ -90,22 +90,22 @@ App.Track.FIXTURES = [
   },
   {
     id: 4,
-    title: 'Menuet for Stringquintet Tsjardjeb',
+    title: 'Menuet Tsjardjeb',
     composer: 'L. Boccherini'
   },
   {
     id: 5,
-    title: 'Serenade for Strings Paramankos',
+    title: 'Serenade For Strings Paramankos',
     composer: 'P.I. Tchaikovsky'
   },
   {
     id: 6,
-    title: 'Out of Africa Carafulia',
+    title: 'Out Of Africa Carafulia',
     composer: 'W.A. Mozart'
   },
   {
     id: 7,
-    title: 'Symphony Nr 40 Xophoratis',
+    title: 'Symphony N° 40 Xophoratis',
     composer: 'W.A. Mozart'
   },
   {
@@ -121,7 +121,7 @@ App.Track.FIXTURES = [
   {
     id: 10,
     title: 'Ode to Joy Imar It Heri',
-    composer: 'L. Von Beethoven'
+    composer: 'L. von Beethoven'
   },
   {
     id: 11,
@@ -171,12 +171,12 @@ App.Track.FIXTURES = [
   {
     id: 23,
     title: 'Morning Mood Trevobima',
-    composer: 'W.A. Mozart'
+    composer: 'E.H. Grieg'
   },
   {
     id: 24,
     title: 'Orpheus In The Underworld Nagodus',
-    composer: 'P. Sterman'
+    composer: 'J. Offenbach'
   },
   {
     id: 25,
@@ -191,7 +191,7 @@ App.Track.FIXTURES = [
   {
     id: 27,
     title: 'Barcarolle Ourybova',
-    composer: 'J.Offenbach'
+    composer: 'J. Offenbach'
   },
   {
     id: 28,
@@ -326,7 +326,7 @@ App.Track.FIXTURES = [
   {
     id: 57,
     title: 'Dance Of The Hours Souraktoff',
-    composer: 'P. Sterman'
+    composer: 'A. Ponchielli'
   },
   {
     id: 58,
@@ -341,7 +341,7 @@ App.Track.FIXTURES = [
   {
     id: 60,
     title: 'Hungarian Dance Netonkla',
-    composer: 'J. brahms'
+    composer: 'J. Brahms'
   },
   {
     id: 61,
@@ -535,7 +535,7 @@ App.Track.FIXTURES = [
   },
   {
     id: 117,
-    Title: 'Adya Medley',
-    composer: '• Stars and Stripes • John Philip de Sousa • Mein Kleiner Gardeoffizier • Robert Stolz/Walter Reisch • Einzugsmarsch (Der Zigeunerbaron Opus 327) • Johann Strauss jr. • Radetzky Marsch • Johann Strauss sr.'
+    title: 'Adya Medley',
+    composer: 'Stars and Stripes • John Philip de Sousa • Mein Kleiner Gardeoffizier • Robert Stolz/Walter Reisch • Einzugsmarsch (Der Zigeunerbaron Opus 327) • Johann Strauss jr. • Radetzky Marsch • Johann Strauss sr.'
   }
 ];
