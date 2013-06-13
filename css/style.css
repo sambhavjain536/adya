@@ -122,10 +122,18 @@ footer p {
   color: #232322;
   font-size: 14px;
   margin: 10px 0 3px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 240px;
+  white-space: nowrap;
 }
 
 .album p {
   color: #a29f9a;
   font-size: 12px;
   margin: 0 0 6px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 240px;
+  white-space: nowrap;
 }
