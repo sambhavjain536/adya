@@ -6,6 +6,7 @@ App.Router.map(function() {
     this.route('videos');
     this.route('photos');
   });
+  this.resource('contact');
 });
 
 App.IndexRoute = Ember.Route.extend({
