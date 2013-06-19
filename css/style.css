@@ -74,20 +74,20 @@ footer p {
   margin: 0;
 }
 
-#discography {
-  clear: both;
-}
-
 #discography h1 {
   color: #232322;
   font-size: 28px;
-  margin: 0 0 50px;
+  margin: 0 0 27px;
   text-align: center;
 }
 
 .album {
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   overflow: hidden;
+}
+
+.album:first-of-type {
+  padding-top: 23px;
 }
 
 .album:nth-of-type(even) {
@@ -97,6 +97,7 @@ footer p {
 .album h2 {
   color: #6d1b21;
   font-size: 20px;
+  margin: 0 0 24px 0;
 }
 
 .album .cover {
@@ -141,7 +142,7 @@ footer p {
 #downloads h1 {
   color: #232322;
   font-size: 28px;
-  margin: 0 0 50px;
+  margin: 0 0 27px;
   text-align: center;
 }
 
