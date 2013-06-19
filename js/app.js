@@ -2,6 +2,10 @@ App = Ember.Application.create();
 
 App.Router.map(function() {
   this.resource('discography');
+  this.resource('downloads', function() {
+    this.route('videos');
+    this.route('photos');
+  });
 });
 
 App.IndexRoute = Ember.Route.extend({
@@ -13,6 +17,12 @@ App.IndexRoute = Ember.Route.extend({
 App.DiscographyRoute = Ember.Route.extend({
   model: function() {
     return App.Album.find();
+  }
+});
+
+App.DownloadsIndexRoute = Ember.Route.extend({
+  redirect: function() {
+    this.transitionTo('downloads.videos');
   }
 });
 

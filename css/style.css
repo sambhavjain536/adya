@@ -137,3 +137,39 @@ footer p {
   width: 240px;
   white-space: nowrap;
 }
+
+#downloads h1 {
+  color: #232322;
+  font-size: 28px;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+#downloads nav {
+  text-align: center;
+}
+
+#downloads nav li {
+  display: inline;
+  list-style: none;
+}
+
+#downloads nav a {
+  background: #fdfcfc;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #b2afa0;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 45px;
+  margin: 0 9px;
+  text-align: center;
+  text-decoration: none;
+  width: 300px;
+}
+
+#downloads nav a.active {
+  background: #fff;
+  border-color: #e8e6e2;
+  color: #6d1a22;
+}

@@ -15,7 +15,7 @@
           <li>{{#linkTo index}}HOME{{/linkTo}}</li>
           <li>{{#linkTo discography}}DISCOGRAPHY{{/linkTo}}</li>
           <li><img src="images/logo.png" alt="ADYA" />
-          <li><a href="#">DOWNLOADS</a></li>
+          <li>{{#linkTo downloads}}DOWNLOADS{{/linkTo}}</li>
           <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
@@ -28,7 +28,7 @@
           <ul>
             <li>{{#linkTo index}}HOME{{/linkTo}}</li>
             <li>{{#linkTo discography}}DISCOGRAPHY{{/linkTo}}</li>
-            <li><a href="#">DOWNLOADS</a></li>
+            <li>{{#linkTo downloads}}DOWNLOADS{{/linkTo}}</li>
             <li><a href="#">CONTACT</a></li>
           </ul>
         </nav>
@@ -71,6 +71,28 @@
         </div>
       {{/each}}
     </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="downloads">
+    <div id="downloads" class="container">
+      <h1>Downloads</h1>
+      <nav>
+        <ol>
+          <li>{{#linkTo downloads.videos}}VIDEOS{{/linkTo}}</li>
+          <li>{{#linkTo downloads.photos}}PHOTOS{{/linkTo}}</li>
+        </ol>
+      </nav>
+
+      {{outlet}}
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="downloads/videos">
+    videos
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="downloads/photos">
+    photos
   </script>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
