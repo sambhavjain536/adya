@@ -147,6 +147,7 @@ footer p {
 }
 
 #downloads nav {
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -173,4 +174,44 @@ footer p {
   background: #fff;
   border-color: #e8e6e2;
   color: #6d1a22;
+}
+
+ol#videos {
+  margin: 0 -10px 50px -10px;
+  padding: 0;
+  overflow: hidden;
+  width: 960px;
+}
+
+ol#videos li {
+  float: left;
+  list-style: none;
+  margin: 0 10px 27px 10px;
+  width: 220px;
+}
+
+ol#videos img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  vertical-align: bottom;
+}
+
+ol#videos p {
+  color: #9a9892;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+ol#videos em {
+  background: rgba(192, 190, 186, .59);
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 20px;
+  margin: 2px 0 2px 8px;
+  padding: 3px 4px;
+  text-transform: uppercase;
+  vertical-align: middle;
 }

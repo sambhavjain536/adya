@@ -26,6 +26,12 @@ App.DownloadsIndexRoute = Ember.Route.extend({
   }
 });
 
+App.DownloadsVideosRoute = Ember.Route.extend({
+  model: function() {
+    return App.Video.find();
+  }
+});
+
 App.AlbumController = Ember.ObjectController.extend({
   coverImage: function() {
     return 'images/album-' + this.get('model').get('title').dasherize() + '.png';
@@ -52,6 +58,12 @@ App.Album = DS.Model.extend({
 App.Track = DS.Model.extend({
   title: DS.attr('string'),
   composer: DS.attr('string')
+});
+
+App.Video = DS.Model.extend({
+  title: DS.attr('string'),
+  thumbnail: DS.attr('string'),
+  album: DS.belongsTo('App.Album')
 });
 
 App.Album.FIXTURES = [
@@ -548,4 +560,61 @@ App.Track.FIXTURES = [
     title: 'Adya Medley',
     composer: 'Stars and Stripes • John Philip de Sousa • Mein Kleiner Gardeoffizier • Robert Stolz/Walter Reisch • Einzugsmarsch (Der Zigeunerbaron Opus 327) • Johann Strauss jr. • Radetzky Marsch • Johann Strauss sr.'
   }
+];
+
+App.Video.FIXTURES = [
+  {
+    id: 1,
+    title: 'Radio Spot',
+    thumbnail: 'images/video-classic-1-radio.jpg',
+    album: 1
+  },
+  {
+    id: 2,
+    title: 'TV Spot',
+    thumbnail: 'images/video-classic-1-tv.jpg',
+    album: 1
+  },
+  {
+    id: 3,
+    title: 'TV Clip (LIVE)',
+    thumbnail: 'images/video-classic-1-live.jpg',
+    album: 1
+  },
+  {
+    id: 11,
+    title: 'Radio Spot',
+    thumbnail: 'images/video-classic-2-radio.jpg',
+    album: 2
+  },
+  {
+    id: 12,
+    title: 'TV Spot',
+    thumbnail: 'images/video-classic-2-tv.jpg',
+    album: 2
+  },
+  {
+    id: 13,
+    title: 'TV Clip (LIVE)',
+    thumbnail: 'images/video-classic-2-live.jpg',
+    album: 2
+  },
+  {
+    id: 21,
+    title: 'Radio Spot',
+    thumbnail: 'images/video-classic-special-radio.jpg',
+    album: 3
+  },
+  {
+    id: 22,
+    title: 'Single Spot',
+    thumbnail: 'images/video-classic-special-single.jpg',
+    album: 3
+  },
+  {
+    id: 23,
+    title: 'TV Clip (LIVE)',
+    thumbnail: 'images/video-classic-special-live.jpg',
+    album: 3
+  },
 ];
