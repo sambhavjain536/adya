@@ -81,6 +81,11 @@ footer p {
   text-align: center;
 }
 
+#discography h1 img {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
 .album {
   padding: 50px 0 50px 0;
   overflow: hidden;
@@ -144,6 +149,11 @@ footer p {
   font-size: 28px;
   margin: 0 0 27px;
   text-align: center;
+}
+
+#downloads h1 img {
+  margin: 0 10px;
+  vertical-align: middle;
 }
 
 #downloads nav {
