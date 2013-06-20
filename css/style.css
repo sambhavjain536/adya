@@ -266,8 +266,9 @@ ol#videos em {
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
   left: 50%;
   margin-left: -230px;
+  margin-top: -255px;
   position: absolute;
-  top: 270px;
+  top: 50%;
   width: 460px;
 }
 

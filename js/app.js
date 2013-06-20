@@ -6,7 +6,18 @@ App.Router.map(function() {
     this.route('videos');
     this.route('photos');
   });
-  this.resource('contact');
+});
+
+App.ApplicationRoute = Ember.Route.extend({
+  events: {
+    showModal: function(modal) {
+      this.render(modal, { into: 'application', outlet: 'modal' });
+    },
+
+    closeModal: function() {
+      this.render('empty', { into: 'application', outlet: 'modal' });
+    }
+  }
 });
 
 App.IndexRoute = Ember.Route.extend({
@@ -33,6 +44,12 @@ App.DownloadsVideosRoute = Ember.Route.extend({
   }
 });
 
+App.ApplicationController = Ember.Controller.extend({
+  showContact: function() {
+    this.send('showModal', 'contact');
+  }
+});
+
 App.AlbumController = Ember.ObjectController.extend({
   coverImage: function() {
     return 'images/album-' + this.get('model').get('title').dasherize() + '.png';
@@ -45,6 +62,24 @@ App.AlbumController = Ember.ObjectController.extend({
 
     return [ tracks.slice(0, divider), tracks.slice(divider, divider * 2), tracks.slice(divider * 2, divider * 3) ];
   }.property()
+});
+
+App.ContactView = Ember.View.extend({
+  didInsertElement: function() {
+    var self = this;
+
+    $(document).on('keyup', function(e) {
+      var KEYCODE_ESC = 27;
+
+      if (e.keyCode === KEYCODE_ESC) {
+        self.get('controller').send('closeModal');
+      }
+    });
+  },
+
+  willClearRender: function() {
+    $(document).off('keyup');
+  }
 });
 
 App.Store = DS.Store.extend({
