@@ -248,3 +248,111 @@ ol#videos em {
   text-transform: uppercase;
   vertical-align: middle;
 }
+
+#contact {
+  background: rgba(46, 44, 38, .4);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  margin: 0 auto;
+  overflow: auto;
+  overflow-y: auto;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#contact #modal {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  left: 50%;
+  margin-left: -230px;
+  margin-top: -255px;
+  position: absolute;
+  top: 50%;
+  width: 460px;
+}
+
+#contact h1 {
+  background: #2e2c26;
+  border-radius: 5px 5px 0 0;
+  color: #ddcfa9;
+  font-size: 16px;
+  line-height: 57px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#contact h1 img {
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+#contact form {
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 34px 30px 30px 30px;
+  overflow: hidden;
+}
+
+#contact input::-webkit-input-placeholder,
+#contact input:-moz-placeholder,
+#contact input:-ms-input-placeholder {
+  color: #9a9892;
+}
+
+#contact input,
+#contact textarea {
+  background: #fbfbfa;
+  border: 1px solid #dfdfde;
+  border-radius: 5px;
+  clear: both;
+  color: #232322;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 18px;
+  width: 368px;
+}
+
+#contact input:hover,
+#contact textarea:hover,
+#contact input:focus,
+#contact textarea:focus {
+  background: #fff;
+  border-color: #c6c5c3;
+}
+
+#contact input {
+  line-height: 30px;
+  padding: 6px 15px;
+  vertical-align: middle;
+}
+
+#contact textarea {
+  line-height: 22px;
+  min-height: 120px;
+  padding: 12px 15px;
+  resize: vertical;
+}
+
+#contact button {
+  background: #fff;
+  border: 2px solid #e1e1e0;
+  border-radius: 5px;
+  clear: both;
+  color: #6d1a22;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 36px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+#contact button:hover {
+  background: #fbfbfa;
+}
+
+#contact button:active {
+  margin-top: 1px;
+}

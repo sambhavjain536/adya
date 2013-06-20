@@ -16,11 +16,13 @@
           <li>{{#linkTo discography}}DISCOGRAPHY{{/linkTo}}</li>
           <li>{{#linkTo index}}<img src="images/logo.png" alt="ADYA" />{{/linkTo}}
           <li>{{#linkTo downloads}}DOWNLOADS{{/linkTo}}</li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#" {{action "showContact"}}>CONTACT</a></li>
         </ul>
       </nav>
     </header>
+
     {{outlet}}
+    {{outlet 'modal'}}
 
     <footer>
       <div class="container">
@@ -29,7 +31,7 @@
             <li>{{#linkTo index}}HOME{{/linkTo}}</li>
             <li>{{#linkTo discography}}DISCOGRAPHY{{/linkTo}}</li>
             <li>{{#linkTo downloads}}DOWNLOADS{{/linkTo}}</li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" {{action "showContact"}}>CONTACT</a></li>
           </ul>
         </nav>
         <p>All rights reserved by ADYA</p>
@@ -103,6 +105,24 @@
 
   <script type="text/x-handlebars" data-template-name="downloads/photos">
     photos
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="empty">
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="contact">
+    <div id="contact">
+      <div id="modal">
+      <h1><img src="images/title-decoration-dark.png" alt="" />contact<img src="images/title-decoration-dark.png" alt="" /></h1>
+      <form>
+        {{view Ember.TextField placeholder="Name" valueBinding="name"}}
+        {{view Ember.TextField placeholder="Email" valueBinding="email"}}
+        {{view Ember.TextField placeholder="Music Inquiry" valueBinding="subject"}}
+        {{view Ember.TextArea placeholder="Enter message..." valueBinding="message"}}
+        <button>send message</button>
+      </form>
+      </div>
+    </div>
   </script>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
