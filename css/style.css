@@ -200,10 +200,33 @@ ol#videos li {
   width: 220px;
 }
 
+ol#videos a {
+  position: relative;
+}
+
+ol#videos a .play {
+  background: 50% 50% url(../images/play.png) no-repeat;
+  display: none;
+  height: 45px;
+  left: 88px;
+  position: absolute;
+  top: 39px;
+  width: 45px;
+}
+
+ol#videos a:hover .play {
+  display: block;
+}
+
+ol#videos a:active .play {
+  display: block;
+  top: 41px;
+}
+
 ol#videos img {
   border-radius: 5px;
   margin-bottom: 10px;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 ol#videos p {

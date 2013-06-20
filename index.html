@@ -91,7 +91,10 @@
     <ol id="videos">
     {{#each video in model}}
       <li>
-        <img {{ bindAttr src="video.thumbnail" alt="video.title" }} />
+        <a href="#">
+          <img {{bindAttr src="video.thumbnail" alt="video.title" }} />
+          <span class="play" />
+        </a>
         <p>{{video.title}}<em>{{video.album.title}}</em></p>
       </li>
     {{/each}}
