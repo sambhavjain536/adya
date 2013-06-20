@@ -294,13 +294,19 @@ ol#videos em {
   overflow: hidden;
 }
 
+#contact input::-webkit-input-placeholder,
+#contact input:-moz-placeholder,
+#contact input:-ms-input-placeholder {
+  color: #9a9892;
+}
+
 #contact input,
 #contact textarea {
   background: #fbfbfa;
   border: 1px solid #dfdfde;
   border-radius: 5px;
-  color: #9a9892;
   clear: both;
+  color: #232322;
   display: block;
   font-size: 14px;
   margin-bottom: 18px;
@@ -313,7 +319,6 @@ ol#videos em {
 #contact textarea:focus {
   background: #fff;
   border-color: #c6c5c3;
-  color: #232322;
 }
 
 #contact input {
