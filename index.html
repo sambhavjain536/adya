@@ -97,14 +97,29 @@
           <img {{bindAttr src="video.thumbnail" alt="video.title" }} />
           <span class="play" />
         </a>
-        <p>{{video.title}}<em>{{video.album.title}}</em></p>
+        <p>
+        {{#if video.title}}
+          <span>{{video.title}}</span>
+        {{/if}}
+          <em>{{video.album.title}}</em>
+        </p>
       </li>
     {{/each}}
   </ol>
   </script>
 
   <script type="text/x-handlebars" data-template-name="downloads/photos">
-    photos
+    <ol id="photos">
+    {{#each photo in model}}
+      <li>
+        <a href="#">
+          <img {{bindAttr src="photo.thumbnail" alt="photo.album.title" }} />
+          <span class="zoom" />
+        </a>
+        <p><em>{{photo.album.title}}</em></p>
+      </li>
+    {{/each}}
+  </ol>
   </script>
 
   <script type="text/x-handlebars" data-template-name="empty">

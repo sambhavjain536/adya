@@ -44,6 +44,12 @@ App.DownloadsVideosRoute = Ember.Route.extend({
   }
 });
 
+App.DownloadsPhotosRoute = Ember.Route.extend({
+  model: function() {
+    return App.Photo.find();
+  }
+});
+
 App.ApplicationController = Ember.Controller.extend({
   showContact: function() {
     this.send('showModal', 'contact');
@@ -98,6 +104,11 @@ App.Track = DS.Model.extend({
 
 App.Video = DS.Model.extend({
   title: DS.attr('string'),
+  thumbnail: DS.attr('string'),
+  album: DS.belongsTo('App.Album')
+});
+
+App.Photo = DS.Model.extend({
   thumbnail: DS.attr('string'),
   album: DS.belongsTo('App.Album')
 });
@@ -653,4 +664,12 @@ App.Video.FIXTURES = [
     thumbnail: 'images/video-classic-special-live.jpg',
     album: 3
   },
+];
+
+App.Photo.FIXTURES = [
+  {
+    id: 1,
+    thumbnail: 'images/photo-classic-2.jpg',
+    album: 2
+  }
 ];

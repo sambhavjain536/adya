@@ -186,26 +186,30 @@ footer p {
   color: #6d1a22;
 }
 
-ol#videos {
+ol#videos,
+ol#photos {
   margin: 0 -10px 50px -10px;
   padding: 0;
   overflow: hidden;
   width: 960px;
 }
 
-ol#videos li {
+ol#videos li,
+ol#photos li {
   float: left;
   list-style: none;
   margin: 0 10px 27px 10px;
   width: 220px;
 }
 
-ol#videos a {
+ol#videos a,
+ol#photos a {
   position: relative;
 }
 
-ol#videos a .play {
-  background: 50% 50% url(../images/play.png) no-repeat;
+ol#videos a .play,
+ol#photos a .zoom {
+  background: url(../images/play.png);
   display: none;
   height: 45px;
   left: 88px;
@@ -214,39 +218,60 @@ ol#videos a .play {
   width: 45px;
 }
 
-ol#videos a:hover .play {
+ol#videos a:hover .play,
+ol#photos a:hover .zoom {
   display: block;
 }
 
-ol#videos a:active .play {
+ol#videos a:active .play,
+ol#photos a:active .zoom {
   display: block;
   top: 41px;
 }
 
-ol#videos img {
+ol#videos img,
+ol#photos img {
   border-radius: 5px;
   margin-bottom: 10px;
   vertical-align: top;
 }
 
-ol#videos p {
+ol#videos p,
+ol#photos p {
   color: #9a9892;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
 }
 
-ol#videos em {
+ol#videos span {
+  margin-right: 4px; /* because of template whitespace, originally: 8px */
+}
+
+ol#videos em,
+ol#photos em {
   background: rgba(192, 190, 186, .59);
   border-radius: 3px;
   color: #fff;
   font-size: 11px;
   font-style: normal;
   line-height: 20px;
-  margin: 2px 0 2px 8px;
+  margin: 2px 0 2px 0;
   padding: 3px 4px;
   text-transform: uppercase;
   vertical-align: middle;
+}
+
+ol#photos a .zoom {
+  background: url(../images/zoom.png);
+  height: 42px;
+  left: 89px;
+  top: 40px;
+  width: 42px;
+}
+
+ol#photos a:active .zoom {
+  top: 42px;
 }
 
 #contact {
