@@ -71,6 +71,8 @@ App.AlbumController = Ember.ObjectController.extend({
 });
 
 App.ContactController = Ember.ObjectController.extend({
+  needs: ['application'],
+
   content: function() {
     return App.Message.create();
   }.property(),
@@ -78,13 +80,13 @@ App.ContactController = Ember.ObjectController.extend({
   // TODO validations
   // TODO error handling
   // TODO 200 status="rejected" reject_reason: "invalid-sender"
-  // TODO close modal upon success
   sendMessage: function() {
     var jqxhr = this.get('model').send();
     var self = this;
 
     jqxhr.success(function() {
       self.set('content', App.Message.create());
+      self.get('controllers.application').closeModal();
     });
   }
 });
