@@ -70,6 +70,63 @@ App.AlbumController = Ember.ObjectController.extend({
   }.property()
 });
 
+App.ContactController = Ember.ObjectController.extend({
+  content: function() {
+    return App.Message.create();
+  }.property(),
+
+  // TODO validations
+  // TODO error handling
+  // TODO 200 status="rejected" reject_reason: "invalid-sender"
+  // TODO close modal upon success
+  sendMessage: function() {
+    var jqxhr = this.get('model').send();
+    var self = this;
+
+    jqxhr.success(function() {
+      self.set('content', App.Message.create());
+    });
+  }
+});
+
+App.Message = Ember.Object.extend({
+  apiKey: function() {
+    return 'fad8482c-0c4b-400d-97dc-6e6da2dfae00';
+  }.property(),
+
+  htmlContent: function() {
+    return '<p>' + this.get('content') + '</p>';
+  }.property('content'),
+
+  options: function() {
+    return {
+      'key': this.get('apiKey'),
+      'message': {
+        'html': this.get('htmlContent'),
+        'text': this.get('content'),
+        'subject': this.get('subject'),
+        'from_email': this.get('email'),
+        'from_name': this.get('name'),
+        'to': [
+          {
+          'email': 'ayrton.decraene@gmail.com', //mousemusic@yucom.be
+          'name': 'Ayrton De Craene' //Mouse Music
+        }
+        ],
+        'headers': {
+          'Reply-To': this.get('email')
+        },
+        'important': true
+      }
+    }
+  }.property('apiKey', 'htmlContent', 'content', 'subject', 'email', 'name'),
+
+  send: function() {
+    var jqxhr = $.post('https://mandrillapp.com/api/1.0//messages/send.json', this.get('options'));
+    return jqxhr;
+  }
+});
+
 App.ContactView = Ember.View.extend({
   didInsertElement: function() {
     var self = this;
