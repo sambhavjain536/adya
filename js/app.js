@@ -77,9 +77,6 @@ App.ContactController = Ember.ObjectController.extend({
     return App.Message.create();
   }.property(),
 
-  // TODO validations
-  // TODO error handling
-  // TODO 200 status="rejected" reject_reason: "invalid-sender"
   sendMessage: function() {
     var jqxhr = this.get('model').send();
     var self = this;
