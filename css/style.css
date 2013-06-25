@@ -376,6 +376,7 @@ ol#photos a:active .zoom {
 
 #contact button:hover {
   background: #fbfbfa;
+  color: #232322;
 }
 
 #contact button:active {
