@@ -140,11 +140,13 @@ App.ContactView = Ember.View.extend({
     var self = this;
 
     $(document).on('keyup', function(e) {
-      var KEYCODE_ESC = 27;
+      Ember.run(this, function() {
+        var escapeKeyCode = 27;
 
-      if (e.keyCode === KEYCODE_ESC) {
-        self.get('controller').send('closeModal');
-      }
+        if (e.keyCode === escapeKeyCode) {
+          self.get('controller').send('closeModal');
+        }
+      });
     });
   },
 
