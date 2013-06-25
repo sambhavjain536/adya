@@ -130,6 +130,12 @@ App.Message = Ember.Object.extend({
 });
 
 App.ContactView = Ember.View.extend({
+  click: function(e) {
+    if ($(e.target).parents('#modal').length === 0) {
+      this.get('controller').send('closeModal');
+    }
+  },
+
   didInsertElement: function() {
     var self = this;
 
