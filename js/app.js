@@ -154,7 +154,7 @@ App.ContactView = Ember.View.extend({
 });
 
 App.Store = DS.Store.extend({
-  adapter: 'DS.FixtureAdapter'
+  adapter: DS.FixtureAdapter.create({ latency: 0 })
 });
 
 App.Album = DS.Model.extend({
