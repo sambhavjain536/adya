@@ -12,25 +12,25 @@
     <header>
       <nav>
         <ul>
-          <li>{{#linkTo index}}HOME{{/linkTo}}</li>
-          <li>{{#linkTo discography}}DISCOGRAPHY{{/linkTo}}</li>
-          <li>{{#linkTo index}}<img src="images/logo.png" alt="ADYA" />{{/linkTo}}
-          <li>{{#linkTo downloads}}DOWNLOADS{{/linkTo}}</li>
+          <li>{{#linkTo "index"}}HOME{{/linkTo}}</li>
+          <li>{{#linkTo "discography"}}DISCOGRAPHY{{/linkTo}}</li>
+          <li>{{#linkTo "index"}}<img src="images/logo.png" alt="ADYA" />{{/linkTo}}
+          <li>{{#linkTo "downloads"}}DOWNLOADS{{/linkTo}}</li>
           <li><a href="#" {{action "showContact"}}>CONTACT</a></li>
         </ul>
       </nav>
     </header>
 
     {{outlet}}
-    {{outlet 'modal'}}
+    {{outlet "modal"}}
 
     <footer>
       <div class="container">
         <nav>
           <ul>
-            <li>{{#linkTo index}}HOME{{/linkTo}}</li>
-            <li>{{#linkTo discography}}DISCOGRAPHY{{/linkTo}}</li>
-            <li>{{#linkTo downloads}}DOWNLOADS{{/linkTo}}</li>
+            <li>{{#linkTo "index"}}HOME{{/linkTo}}</li>
+            <li>{{#linkTo "discography"}}DISCOGRAPHY{{/linkTo}}</li>
+            <li>{{#linkTo "downloads"}}DOWNLOADS{{/linkTo}}</li>
             <li><a href="#" {{action "showContact"}}>CONTACT</a></li>
           </ul>
         </nav>
@@ -55,7 +55,7 @@
         <div class="album">
           <div class="container">
             <div class="cover">
-              <img {{bindAttr src=coverImage }} />
+              <img {{bindAttr src="album.coverImage"}} />
             </div>
             <h2>{{album.title}}</h2>
 
@@ -80,8 +80,8 @@
       <h1><img src="images/title-decoration.png" alt="" />Downloads<img src="images/title-decoration.png" alt="" /></h1>
       <nav>
         <ol>
-          <li>{{#linkTo downloads.videos}}VIDEOS{{/linkTo}}</li>
-          <li>{{#linkTo downloads.photos}}PHOTOS{{/linkTo}}</li>
+          <li>{{#linkTo "downloads.videos"}}VIDEOS{{/linkTo}}</li>
+          <li>{{#linkTo "downloads.photos"}}PHOTOS{{/linkTo}}</li>
         </ol>
       </nav>
 
@@ -94,7 +94,7 @@
     {{#each video in model}}
       <li>
         <a href="#">
-          <img {{bindAttr src="video.thumbnail" alt="video.title" }} />
+          <img {{bindAttr src="video.thumbnail" alt="video.title"}} />
           <span class="play" />
         </a>
         <p>
@@ -113,7 +113,7 @@
     {{#each photo in model}}
       <li>
         <a href="#">
-          <img {{bindAttr src="photo.thumbnail" alt="photo.album.title" }} />
+          <img {{bindAttr src="photo.thumbnail" alt="photo.album.title"}} />
           <span class="zoom" />
         </a>
         <p><em>{{photo.album.title}}</em></p>
