@@ -74,6 +74,59 @@ footer p {
   margin: 0;
 }
 
+#tours h1 {
+  color: #232322;
+  font-size: 28px;
+  margin: 0 0 21px 0;
+  text-align: center;
+}
+
+#tours h1 strong {
+  color: #b2afa9;
+  font-weight: 300;
+}
+
+#tours table {
+  background: #fbfbfa;
+  border-radius: 5px;
+  color: #7c7870;
+  margin: 0 auto 108px auto;
+}
+
+#tours table tr {
+  padding: 0 25px;
+}
+
+#tours thead {
+  font-size: 12px;
+  line-height: 45px;
+}
+
+#tours thead td:first-child {
+  padding-left: 25px;
+}
+
+#tours tbody tr {
+  border-top: 1px solid #eaeae8;
+  font-size: 14px;
+  height: 62px;
+}
+
+#tours tbody tr td:first-child {
+  line-height: auto;
+}
+
+#tours tbody tr td:first-child span {
+  font-size: 11px;
+}
+
+#tours tbody tr td:first-child strong {
+  color: #232322;
+  font-size: 20px;
+  font-weight: 300;
+  display: block;
+}
+
 #discography h1 {
   color: #232322;
   font-size: 28px;

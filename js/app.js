@@ -22,7 +22,7 @@ App.ApplicationRoute = Ember.Route.extend({
 
 App.IndexRoute = Ember.Route.extend({
   model: function() {
-    return ['red', 'yellow', 'blue'];
+    return App.Tour.find();
   }
 });
 
@@ -164,6 +164,12 @@ App.Album = DS.Model.extend({
 App.Track = DS.Model.extend({
   title: DS.attr('string'),
   composer: DS.attr('string')
+});
+
+App.Tour = DS.Model.extend({
+  date: DS.attr('string'),
+  city: DS.attr('string'),
+  location: DS.attr('string')
 });
 
 App.Video = DS.Model.extend({
@@ -671,6 +677,75 @@ App.Track.FIXTURES = [
     title: 'Adya Medley',
     composer: 'Stars and Stripes • John Philip de Sousa • Mein Kleiner Gardeoffizier • Robert Stolz/Walter Reisch • Einzugsmarsch (Der Zigeunerbaron Opus 327) • Johann Strauss jr. • Radetzky Marsch • Johann Strauss sr.'
   }
+];
+
+App.Tour.FIXTURES = [
+  {
+    id: 1,
+    date: 'OCT 25',
+    city: 'Saarbrücken, Germany',
+    location: 'Saarlandhalle'
+  },
+  {
+    id: 2,
+    date: 'OCT 26',
+    city: 'München, Germany',
+    location: 'Philharmonie'
+  },
+  {
+    id: 3,
+    date: 'OCT 27',
+    city: 'Nürnberg, Germany',
+    location: 'Meistersingerhalle'
+  },
+  {
+    id: 4,
+    date: 'OCT 28',
+    city: 'Zürich, Switzerland',
+    location: 'Kongresshalle'
+  },
+  {
+    id: 5,
+    date: 'OCT 29',
+    city: 'Stuttgart, Germany',
+    location: 'Beethovensaal'
+  },
+  {
+    id: 6,
+    date: 'OCT 30',
+    city: 'Frankfurt, Germany',
+    location: 'Jahrhunderthalle'
+  },
+  {
+    id: 7,
+    date: 'OCT 31',
+    city: 'Fulda, Germany',
+    location: 'Esperantohalle'
+  },
+  {
+    id: 8,
+    date: 'NOV 1',
+    city: 'Düsseldorf, Germany',
+    location: 'Mitsubishi Halle'
+  },
+  {
+    id: 9,
+    date: 'NOV 2',
+    city: 'Bielefeld, Germany',
+    location: 'Stadthalle'
+  },
+  {
+    id: 10,
+    date: 'NOV 3',
+    city: 'Berlin, Germany',
+    location: 'Admiralspalast'
+  },
+  {
+    id: 11,
+    date: 'NOV 4',
+    city: 'Hamburg, Germany',
+    location: 'CCH 1'
+  },
 ];
 
 App.Video.FIXTURES = [
