@@ -56,8 +56,8 @@
         {{#each tour in model}}
         <tr>
           <td>
-            <span>{{tour.date}}</span>
-            <strong>13</strong>
+            <span>{{month tour.date}}</span>
+            <strong>{{day tour.date}}</strong>
           </td>
           <td>{{tour.city}}</td>
           <td>{{tour.location}}</td>
@@ -163,6 +163,7 @@
   </script>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
+  <script src="js/libs/moment.min.js"></script>
   <script src="js/libs/handlebars-1.0.0-rc.4.js"></script>
   <script src="js/libs/ember-1.0.0-rc.5.js"></script>
   <script src="http://builds.emberjs.com.s3.amazonaws.com/ember-data-0.13.js"></script>

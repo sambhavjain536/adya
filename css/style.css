@@ -118,6 +118,7 @@ footer p {
 
 #tours tbody tr td:first-child span {
   font-size: 11px;
+  text-transform: uppercase;
 }
 
 #tours tbody tr td:first-child strong {

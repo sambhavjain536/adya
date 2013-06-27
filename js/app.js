@@ -114,6 +114,14 @@ App.ContactView = Ember.View.extend({
   }
 });
 
+Ember.Handlebars.registerBoundHelper('month', function(value) {
+  return moment(value).format('MMM');
+});
+
+Ember.Handlebars.registerBoundHelper('day', function(value) {
+  return moment(value).format('DD');
+});
+
 App.Store = DS.Store.extend({
   adapter: DS.FixtureAdapter.create({ latency: 0 })
 });
@@ -682,67 +690,67 @@ App.Track.FIXTURES = [
 App.Tour.FIXTURES = [
   {
     id: 1,
-    date: 'OCT 25',
+    date: new Date(2013, 10, 25),
     city: 'Saarbrücken, Germany',
     location: 'Saarlandhalle'
   },
   {
     id: 2,
-    date: 'OCT 26',
+    date: new Date(2013, 10, 26),
     city: 'München, Germany',
     location: 'Philharmonie'
   },
   {
     id: 3,
-    date: 'OCT 27',
+    date: new Date(2013, 10, 27),
     city: 'Nürnberg, Germany',
     location: 'Meistersingerhalle'
   },
   {
     id: 4,
-    date: 'OCT 28',
+    date: new Date(2013, 10, 28),
     city: 'Zürich, Switzerland',
     location: 'Kongresshalle'
   },
   {
     id: 5,
-    date: 'OCT 29',
+    date: new Date(2013, 10, 29),
     city: 'Stuttgart, Germany',
     location: 'Beethovensaal'
   },
   {
     id: 6,
-    date: 'OCT 30',
+    date: new Date(2013, 10, 30),
     city: 'Frankfurt, Germany',
     location: 'Jahrhunderthalle'
   },
   {
     id: 7,
-    date: 'OCT 31',
+    date: new Date(2013, 10, 31),
     city: 'Fulda, Germany',
     location: 'Esperantohalle'
   },
   {
     id: 8,
-    date: 'NOV 1',
+    date: new Date(2013, 11, 1),
     city: 'Düsseldorf, Germany',
     location: 'Mitsubishi Halle'
   },
   {
     id: 9,
-    date: 'NOV 2',
+    date: new Date(2013, 11, 2),
     city: 'Bielefeld, Germany',
     location: 'Stadthalle'
   },
   {
     id: 10,
-    date: 'NOV 3',
+    date: new Date(2013, 11, 3),
     city: 'Berlin, Germany',
     location: 'Admiralspalast'
   },
   {
     id: 11,
-    date: 'NOV 4',
+    date: new Date(2013, 11, 4),
     city: 'Hamburg, Germany',
     location: 'CCH 1'
   },
