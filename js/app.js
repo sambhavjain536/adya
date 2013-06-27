@@ -77,8 +77,6 @@ App.AlbumController = Ember.ObjectController.extend({
 });
 
 App.ContactController = Ember.ObjectController.extend({
-  needs: ['application'],
-
   content: function() {
     return App.Message.create();
   }.property(),
@@ -89,7 +87,7 @@ App.ContactController = Ember.ObjectController.extend({
 
     jqxhr.success(function() {
       self.set('content', App.Message.create());
-      self.get('controllers.application').closeModal();
+      self.send('closeModal');
     });
   }
 });
