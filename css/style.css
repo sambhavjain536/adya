@@ -74,6 +74,51 @@ footer p {
   margin: 0;
 }
 
+#hero {
+  background: url(../images/hero.jpg);
+  border-radius: 5px;
+  height: 477px;
+  margin-bottom: 70px;
+}
+
+#hero h1 {
+  color: #fff;
+  font-size: 39px;
+  margin: 0;
+  padding: 320px 0 0 0;
+  text-align: center;
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+  color: #fff;
+  margin: 0 0 15px 0;
+  opacity: 0.9;
+  text-align: center;
+  text-shadow: 0px 1px 2px #000;
+}
+
+#hero .call-to-action {
+  text-align: center;
+}
+
+#hero .call-to-action * {
+  vertical-align: middle;
+}
+
+#hero .call-to-action span {
+  background: rgba(178, 175, 169, .75);
+  border-radius: 25px;
+  color: rgba(255, 255, 255, .75);
+  display: inline-block;
+  font-size: 12px;
+  height: 29px;
+  line-height: 29px;
+  margin: 0 5px;
+  text-align: center;
+  width: 29px;
+}
+
 #tours h1 {
   color: #232322;
   font-size: 28px;
