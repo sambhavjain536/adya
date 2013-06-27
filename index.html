@@ -40,16 +40,24 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name="index">
+    {{render "hero"}}
+    {{render "tours"}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="hero">
     <section id="hero" class="container">
       <h1>ADYA CLASSIC 3</h1>
       <p>Latest critically acclaimed album from <strong>Adriaan Van Landschoot</strong>.</p>
 
       <div class="call-to-action">
-        <a href=""><img src="images/amazon.png" alt="LISTEN ON AMAZON" /></a>
+        <a {{bindAttr href="amazon"}}><img src="images/amazon.png" alt="LISTEN ON AMAZON" /></a>
         <span>OR</span>
-        <a href=""><img src="images/itunes.png" alt="LISTEN ON iTUNES" /></a>
+        <a {{bindAttr href="itunes"}}><img src="images/itunes.png" alt="LISTEN ON iTUNES" /></a>
       </div>
     </section>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="tours">
     <section id="tours">
       <h1>Tour Dates: <strong>2013</strong></h1>
 

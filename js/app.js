@@ -20,10 +20,16 @@ App.ApplicationRoute = Ember.Route.extend({
   }
 });
 
-App.IndexRoute = Ember.Route.extend({
-  model: function() {
+App.HeroController = Ember.ObjectController.extend({
+  content: function() {
+    return App.Album.find(5);
+  }.property()
+});
+
+App.ToursController = Ember.ArrayController.extend({
+  content: function() {
     return App.Tour.find();
-  }
+  }.property()
 });
 
 App.DiscographyRoute = Ember.Route.extend({
@@ -128,7 +134,9 @@ App.Store = DS.Store.extend({
 
 App.Album = DS.Model.extend({
   title: DS.attr('string'),
-  tracks: DS.hasMany('App.Track')
+  tracks: DS.hasMany('App.Track'),
+  amazon: DS.attr('string'),
+  itunes: DS.attr('string')
 });
 
 App.Track = DS.Model.extend({
@@ -215,7 +223,9 @@ App.Album.FIXTURES = [
   {
     id: 5,
     title: 'Classic 3',
-    tracks: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117]
+    tracks: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117],
+    amazon: 'http://www.amazon.de/Classic-3-Opera-Adya/dp/B00D4D5PC8',
+    itunes: 'https://itunes.apple.com/de/album/classic-3-opera/id660312677?l=en'
   }
 ];
 
