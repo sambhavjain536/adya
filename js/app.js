@@ -22,6 +22,7 @@ App.ApplicationRoute = Ember.Route.extend({
 
 App.IndexRoute = Ember.Route.extend({
   setupController: function(controller, model) {
+    this._super(controller, model);
     this.controllerFor('hero').set('model', App.Album.find(5));
     this.controllerFor('tours').set('model', App.Tour.find());
   }
