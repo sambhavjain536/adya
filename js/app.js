@@ -20,17 +20,15 @@ App.ApplicationRoute = Ember.Route.extend({
   }
 });
 
-App.HeroController = Ember.ObjectController.extend({
-  content: function() {
-    return App.Album.find(5);
-  }.property()
+App.IndexRoute = Ember.Route.extend({
+  setupController: function(controller, model) {
+    this.controllerFor('hero').set('model', App.Album.find(5));
+    this.controllerFor('tours').set('model', App.Tour.find());
+  }
 });
 
-App.ToursController = Ember.ArrayController.extend({
-  content: function() {
-    return App.Tour.find();
-  }.property()
-});
+App.HeroController = Ember.ObjectController.extend();
+App.ToursController = Ember.ArrayController.extend();
 
 App.DiscographyRoute = Ember.Route.extend({
   model: function() {
