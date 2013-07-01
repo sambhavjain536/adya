@@ -56,6 +56,10 @@ App.DownloadsPhotosRoute = Ember.Route.extend({
 });
 
 App.ApplicationController = Ember.Controller.extend({
+  willClearModal: function() {
+    this.send('closeModal');
+  }.observes('currentPath'),
+
   showContact: function() {
     this.send('showModal', 'contact');
   }
