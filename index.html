@@ -106,7 +106,7 @@
     <div id="discography">
       <h1><img src="images/title-decoration.png" alt="" />Discography<img src="images/title-decoration.png" alt="" /></h1>
 
-      {{#each album in model itemController="album"}}
+      {{#each album in sortedAlbums itemController="album"}}
         <div class="album">
           <div class="container">
             <div class="cover">

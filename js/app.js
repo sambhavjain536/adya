@@ -65,6 +65,15 @@ App.ApplicationController = Ember.Controller.extend({
   }
 });
 
+App.DiscographyController = Ember.ArrayController.extend({
+  sortedAlbums: function() {
+    return Ember.ArrayProxy.createWithMixins(Ember.SortableMixin, {
+      sortProperties: ['id'],
+      content: this.get('content')
+    });
+  }.property('content'),
+});
+
 App.AlbumController = Ember.ObjectController.extend({
   coverImage: function() {
     return 'images/album-' + this.get('model').get('title').dasherize() + '.png';
