@@ -89,6 +89,8 @@ App.AlbumController = Ember.ObjectController.extend({
 });
 
 App.ContactController = Ember.ObjectController.extend({
+  mandrillError: false,
+
   content: function() {
     return App.Message.create();
   }.property(),
@@ -96,6 +98,10 @@ App.ContactController = Ember.ObjectController.extend({
   sendMessage: function() {
     var jqxhr = this.get('model').send();
     var self = this;
+
+    jqxhr.error(function() {
+      self.set('mandrillError', true);
+    });
 
     jqxhr.success(function() {
       self.set('content', App.Message.create());
@@ -176,17 +182,13 @@ App.Message = Ember.Object.extend({
     return 'fad8482c-0c4b-400d-97dc-6e6da2dfae00';
   }.property(),
 
-  htmlContent: function() {
-    return '<p>' + this.get('content') + '</p>';
-  }.property('content'),
 
   options: function() {
     return {
       'key': this.get('apiKey'),
       'message': {
-        'html': this.get('htmlContent'),
-        'text': this.get('content'),
         'subject': this.get('subject'),
+        'text': this.get('body'),
         'from_email': this.get('email'),
         'from_name': this.get('name'),
         'to': [
@@ -201,7 +203,7 @@ App.Message = Ember.Object.extend({
         'important': true
       }
     }
-  }.property('apiKey', 'htmlContent', 'content', 'subject', 'email', 'name'),
+  }.property('apiKey', 'body', 'subject', 'email', 'name'),
 
   send: function() {
     var jqxhr = $.post('https://mandrillapp.com/api/1.0//messages/send.json', this.get('options'));

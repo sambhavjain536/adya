@@ -462,6 +462,10 @@ ol#photos a:active .zoom {
   width: 460px;
 }
 
+#contact #modal.mandrill-error {
+  margin-top: -88px;
+}
+
 #contact h1 {
   background: #2e2c26;
   border-radius: 5px 5px 0 0;
@@ -478,7 +482,7 @@ ol#photos a:active .zoom {
   vertical-align: middle;
 }
 
-#contact form {
+#contact #modal-content {
   background: #fff;
   border-radius: 0 0 5px 5px;
   padding: 34px 30px 30px 30px;
@@ -546,4 +550,15 @@ ol#photos a:active .zoom {
 
 #contact button:active {
   margin-top: 1px;
+}
+
+#contact p {
+  color: #7c7870;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+#contact a {
+  color: #6d1b21;
 }
