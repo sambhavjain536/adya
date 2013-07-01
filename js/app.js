@@ -176,15 +176,11 @@ App.Message = Ember.Object.extend({
     return 'fad8482c-0c4b-400d-97dc-6e6da2dfae00';
   }.property(),
 
-  htmlContent: function() {
-    return '<p>' + this.get('content') + '</p>';
-  }.property('content'),
 
   options: function() {
     return {
       'key': this.get('apiKey'),
       'message': {
-        'html': this.get('htmlContent'),
         'text': this.get('content'),
         'subject': this.get('subject'),
         'from_email': this.get('email'),
