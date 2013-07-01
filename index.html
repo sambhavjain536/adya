@@ -182,16 +182,22 @@
 
   <script type="text/x-handlebars" data-template-name="contact">
     <div id="contact">
-      <div id="modal">
-      <h1><img src="images/title-decoration-dark.png" alt="" />contact<img src="images/title-decoration-dark.png" alt="" /></h1>
+      <div id="modal" {{bindAttr class="mandrillError"}}>
+        <h1><img src="images/title-decoration-dark.png" alt="" />contact<img src="images/title-decoration-dark.png" alt="" /></h1>
 
-      <form>
-        {{view Ember.TextField placeholder="Name" valueBinding="model.name"}}
-        {{view Ember.TextField placeholder="Email" valueBinding="model.email"}}
-        {{view Ember.TextField placeholder="Music Inquiry" valueBinding="model.subject"}}
-        {{view Ember.TextArea placeholder="Enter message..." valueBinding="model.content"}}
-        <button {{action "sendMessage"}}>send message</button>
-      </form>
+        <div id="modal-content">
+        {{#unless mandrillError}}
+          <form>
+            {{view Ember.TextField placeholder="Name" valueBinding="model.name"}}
+            {{view Ember.TextField placeholder="Email" valueBinding="model.email"}}
+            {{view Ember.TextField placeholder="Music Inquiry" valueBinding="model.subject"}}
+            {{view Ember.TextArea placeholder="Enter message..." valueBinding="model.content"}}
+            <button {{action "sendMessage"}}>send message</button>
+          </form>
+        {{else}}
+          <p>Something went wrong sending your email, please contact us at <a href="mailto:mousemusic@yucom.be">mousemusic@yucom.be</a>.</p>
+        {{/unless}}
+        </div>
       </div>
     </div>
   </script>

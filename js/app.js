@@ -89,6 +89,8 @@ App.AlbumController = Ember.ObjectController.extend({
 });
 
 App.ContactController = Ember.ObjectController.extend({
+  mandrillError: false,
+
   content: function() {
     return App.Message.create();
   }.property(),
@@ -96,6 +98,10 @@ App.ContactController = Ember.ObjectController.extend({
   sendMessage: function() {
     var jqxhr = this.get('model').send();
     var self = this;
+
+    jqxhr.error(function() {
+      self.set('mandrillError', true);
+    });
 
     jqxhr.success(function() {
       self.set('content', App.Message.create());
