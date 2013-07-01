@@ -11,11 +11,29 @@ header {
   background: url(../images/header.png);
   height: 72px;
   margin: 32px 0 60px 0;
+  position: relative;
   text-align: center;
 }
 
 header ul {
+  float: left;
   margin: 0;
+  padding: 0;
+  width: 50%;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+header ul.left {
+  padding-right: 52px;
+  text-align: right;
+}
+
+header ul.right {
+  padding-left: 52px;
+  text-align: left;
 }
 
 header li {
@@ -35,7 +53,11 @@ header a.active {
 }
 
 header img {
+  left: 50%;
+  margin-left: -52px;
   margin-top: -22px;
+  position: absolute;
+  top: 0;
   vertical-align: top;
 }
 
@@ -297,6 +319,11 @@ footer p {
 #downloads nav {
   margin-bottom: 50px;
   text-align: center;
+}
+
+#downloads nav ol {
+  margin: 0;
+  padding: 0;
 }
 
 #downloads nav li {

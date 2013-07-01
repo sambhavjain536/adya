@@ -11,10 +11,12 @@
   <script type="text/x-handlebars">
     <header>
       <nav>
-        <ul>
+        <ul class="left">
           <li>{{#linkTo "index"}}HOME{{/linkTo}}</li>
           <li>{{#linkTo "discography"}}DISCOGRAPHY{{/linkTo}}</li>
-          <li>{{#linkTo "index"}}<img src="images/logo.png" alt="ADYA" />{{/linkTo}}
+        </ul>
+        {{#linkTo "index"}}<img src="images/logo.png" alt="ADYA" />{{/linkTo}}
+        <ul class="right">
           <li>{{#linkTo "downloads"}}DOWNLOADS{{/linkTo}}</li>
           <li><a href="#" {{action "showContact"}}>CONTACT</a></li>
         </ul>
