@@ -41,6 +41,7 @@
 
   <script type="text/x-handlebars" data-template-name="index">
     {{render "hero"}}
+    {{partial "adya"}}
     {{render "tours"}}
   </script>
 
@@ -53,6 +54,19 @@
         <a {{bindAttr href="amazon"}}><img src="images/amazon.png" alt="LISTEN ON AMAZON" /></a>
         <span>OR</span>
         <a {{bindAttr href="itunes"}}><img src="images/itunes.png" alt="LISTEN ON iTUNES" /></a>
+      </div>
+    </section>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="_adya">
+    <section id="adya">
+      <div class="container">
+        <div class="left">
+          <h1>Adriaan Van Landschoot <span>&</span> Edwig Abrath</h1>
+
+          <p>Formed in the late 2000s by Belgian composer/producer Adriaan Van Landschoot, dancefloor-ready classical crossover project Adya (the name is derived from an amalgamation Adrian and Yasmin, the names of Landschoot's children) specializes in retooling classical masterpieces into radio-ready modern pop songs.</p>
+        </div>
+        <img src="images/adriaan.png" alt="Adriaan Van Landschoot" />
       </div>
     </section>
   </script>

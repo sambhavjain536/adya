@@ -78,7 +78,6 @@ footer p {
   background: url(../images/hero.jpg);
   border-radius: 5px;
   height: 477px;
-  margin-bottom: 70px;
 }
 
 #hero h1 {
@@ -118,6 +117,46 @@ footer p {
   text-align: center;
   width: 29px;
 }
+
+#adya {
+  border-bottom: 1px solid #eceae8;
+  margin-bottom: 72px;
+  overflow: hidden;
+}
+
+#adya .container {
+  min-height: 285px;
+  padding-top: 70px;
+  position: relative;
+}
+
+#adya h1 {
+  color: #232322;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+#adya h1 span {
+  color: #b2afa9;
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+}
+
+#adya p {
+  color: #7c7870;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 0;
+  width: 550px;
+}
+
+#adya img {
+  bottom: 0;
+  right: -185px;
+  position: absolute;
+  vertical-align: bottom;
+}
+
 
 #tours h1 {
   color: #232322;
