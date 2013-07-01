@@ -187,8 +187,8 @@ App.Message = Ember.Object.extend({
     return {
       'key': this.get('apiKey'),
       'message': {
-        'text': this.get('content'),
         'subject': this.get('subject'),
+        'text': this.get('body'),
         'from_email': this.get('email'),
         'from_name': this.get('name'),
         'to': [
@@ -203,7 +203,7 @@ App.Message = Ember.Object.extend({
         'important': true
       }
     }
-  }.property('apiKey', 'htmlContent', 'content', 'subject', 'email', 'name'),
+  }.property('apiKey', 'body', 'subject', 'email', 'name'),
 
   send: function() {
     var jqxhr = $.post('https://mandrillapp.com/api/1.0//messages/send.json', this.get('options'));
