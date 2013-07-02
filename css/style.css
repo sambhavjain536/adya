@@ -562,3 +562,13 @@ ol#photos a:active .zoom {
 #contact a {
   color: #6d1b21;
 }
+
+.mfp-bg {
+  background: rgba(46, 44, 38, .4);
+  opacity: 1;
+}
+
+.mfp-figure:after,
+.mfp-iframe-scaler iframe {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+}
