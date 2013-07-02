@@ -168,11 +168,13 @@ App.Tour = DS.Model.extend({
 
 App.Video = DS.Model.extend({
   title: DS.attr('string'),
+  src: DS.attr('string'),
   thumbnail: DS.attr('string'),
   album: DS.belongsTo('App.Album')
 });
 
 App.Photo = DS.Model.extend({
+  src: DS.attr('string'),
   thumbnail: DS.attr('string'),
   album: DS.belongsTo('App.Album')
 });
@@ -795,6 +797,7 @@ App.Video.FIXTURES = [
     id: 3,
     title: 'TV Clip (LIVE)',
     thumbnail: 'images/video-classic-1-live.jpg',
+    src: 'http://www.youtube.com/watch?v=rCYhpqw7MSs',
     album: 1
   },
   {
@@ -813,6 +816,7 @@ App.Video.FIXTURES = [
     id: 13,
     title: 'TV Clip (LIVE)',
     thumbnail: 'images/video-classic-2-live.jpg',
+    src: 'http://www.youtube.com/watch?v=tiCsEsVSSHs',
     album: 2
   },
   {
@@ -831,8 +835,16 @@ App.Video.FIXTURES = [
     id: 23,
     title: 'TV Clip (LIVE)',
     thumbnail: 'images/video-classic-special-live.jpg',
+    src: 'https://www.youtube.com/watch?v=m5eIvVwQCKw',
     album: 3
   },
+  {
+    id: 31,
+    title: 'Opera',
+    thumbnail: '',
+    src: 'http://vimeo.com/69101584',
+    album: 5
+  }
 ];
 
 App.Photo.FIXTURES = [
