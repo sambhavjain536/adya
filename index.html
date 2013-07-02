@@ -5,6 +5,7 @@
   <title>ADYA CLASSIC</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="components/magnific-popup/dist/magnific-popup.css">
 </head>
 <body>
 
@@ -148,10 +149,7 @@
     <ol id="videos">
     {{#each video in model}}
       <li>
-        <a href="#">
-          <img {{bindAttr src="video.thumbnail" alt="video.title"}} />
-          <span class="play" />
-        </a>
+        {{view App.PopupView hrefBinding="video.src" thumbnailBinding="video.thumbnail" titleBinding="video.title" popupType="iframe" icon="play"}}
         <p>
         {{#if video.title}}
           <span>{{video.title}}</span>
@@ -167,14 +165,16 @@
     <ol id="photos">
     {{#each photo in model}}
       <li>
-        <a href="#">
-          <img {{bindAttr src="photo.thumbnail" alt="photo.album.title"}} />
-          <span class="zoom" />
-        </a>
+        {{view App.PopupView hrefBinding="photo.src" thumbnailBinding="photo.thumbnail" titleBinding="photo.album.title" popupType="image" icon="zoom"}}
         <p><em>{{photo.album.title}}</em></p>
       </li>
     {{/each}}
   </ol>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="popup">
+    <img {{bindAttr src="view.thumbnail" alt="view.title"}} />
+    <span {{bindAttr class="view.icon"}} />
   </script>
 
   <script type="text/x-handlebars" data-template-name="empty">
@@ -203,6 +203,7 @@
   </script>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
+  <script src="components/magnific-popup/dist/jquery.magnific-popup.js"></script>
   <script src="js/libs/moment.min.js"></script>
   <script src="js/libs/handlebars-1.0.0-rc.4.js"></script>
   <script src="js/libs/ember-1.0.0-rc.6.js"></script>

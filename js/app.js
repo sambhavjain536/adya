@@ -49,6 +49,16 @@ App.DownloadsVideosRoute = Ember.Route.extend({
   }
 });
 
+App.PopupView = Ember.View.extend({
+  tagName: 'a',
+  attributeBindings: ['href'],
+  templateName: 'popup',
+
+  didInsertElement: function() {
+    this.$().magnificPopup({ type: this.get('popupType') });
+  }
+});
+
 App.DownloadsPhotosRoute = Ember.Route.extend({
   model: function() {
     return App.Photo.find();
@@ -841,7 +851,7 @@ App.Video.FIXTURES = [
   {
     id: 31,
     title: 'Opera',
-    thumbnail: '',
+    thumbnail: 'images/video-classic-3-opera.jpg',
     src: 'http://vimeo.com/69101584',
     album: 5
   }
