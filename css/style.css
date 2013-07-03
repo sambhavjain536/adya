@@ -100,6 +100,8 @@ footer p {
   background: url(../images/hero.jpg);
   border-radius: 5px;
   height: 477px;
+  position: relative;
+  z-index: 1;
 }
 
 #hero h1 {
@@ -141,9 +143,15 @@ footer p {
 }
 
 #adya {
+  background: rgba(255, 255, 255, .71);
   border-bottom: 1px solid #eceae8;
+  border-top: 1px solid #eceae8;
   margin-bottom: 72px;
+  margin-top: -90px;
+  padding-top: 89px;
+  position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 #adya .container {
