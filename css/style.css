@@ -187,7 +187,6 @@ footer p {
   vertical-align: bottom;
 }
 
-
 #tours h1 {
   color: #232322;
   font-size: 28px;
@@ -204,7 +203,7 @@ footer p {
   background: #fbfbfa;
   border-radius: 5px;
   color: #7c7870;
-  margin: 0 auto 108px auto;
+  margin: 0 auto 68px auto;
 }
 
 #tours thead {
@@ -254,6 +253,14 @@ footer p {
 #tours a {
   display: inline-block;
   text-decoration: none;
+}
+
+#tours hr {
+  background: url(../images/hr.png) no-repeat 0 0;
+  border: 0;
+  height: 12px;
+  margin: 0 auto 68px auto;
+  width: 940px;
 }
 
 #discography h1 {
