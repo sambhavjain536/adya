@@ -256,13 +256,35 @@ footer p {
 }
 
 #tours hr {
-  background: url(../images/hr.png) no-repeat 0 0;
+  background: url(../images/hr.png);
   border: 0;
   height: 12px;
   margin: 0 auto 68px auto;
   width: 940px;
 }
 
+#photo-album h1 {
+  color: #232322;
+  font-size: 28px;
+  margin: 0 0 34px 0;
+  text-align: center;
+}
+
+#photo-album ol {
+  margin: 0 -18px 50px -18px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#photo-album ol li {
+  background: url(../images/album-bg.png);
+  float: left;
+  height: 155px;
+  list-style: none;
+  margin: 0 10px 12px 10px;
+  padding: 0 2px 12px 2px;
+  width: 220px;
+}
 #discography h1 {
   color: #232322;
   font-size: 28px;
