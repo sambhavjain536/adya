@@ -92,19 +92,19 @@
 
         <tbody>
         {{#each tour in model}}
-        <tr>
-          <td class="date">
-            <span>{{month tour.date}}</span>
-            <strong>{{day tour.date}}</strong>
-          </td>
-          <td class="city">{{tour.city}}</td>
-          <td class="location">{{tour.location}}</td>
-          <td class="time">{{time tour.date}}</td>
-          <td class="call-to-action">
-          {{#if tour.tickets}}
-            <a {{bindAttr href="tour.tickets"}} target="_blank">BUY TICKETS</a></td>
-          {{/if}}
-        </tr>
+          <tr>
+            <td class="date">
+              <span>{{month tour.date}}</span>
+              <strong>{{day tour.date}}</strong>
+            </td>
+            <td class="city">{{tour.city}}</td>
+            <td class="location">{{tour.location}}</td>
+            <td class="time">{{time tour.date}}</td>
+            <td class="call-to-action">
+            {{#if tour.tickets}}
+              <a {{bindAttr href="tour.tickets"}} target="_blank">BUY TICKETS</a></td>
+            {{/if}}
+          </tr>
         {{/each}}
         </tbody>
       </table>
