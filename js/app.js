@@ -240,13 +240,20 @@ App.Message = Ember.Object.extend({
     return 'fad8482c-0c4b-400d-97dc-6e6da2dfae00';
   }.property(),
 
+  formattedSubject: function() {
+    return '[ADYA.EU] ' + (this.get('subject') ? this.get('subject') : 'Music Inquiry');
+  }.property('subject'),
+
+  formattedBody: function() {
+    return this.get('body') + "\n\n--\nSent from http://adya.eu";
+  }.property('body'),
 
   options: function() {
     return {
       'key': this.get('apiKey'),
       'message': {
-        'subject': this.get('subject'),
-        'text': this.get('body'),
+        'subject': this.get('formattedSubject'),
+        'text': this.get('formattedBody'),
         'from_email': this.get('email'),
         'from_name': this.get('name'),
         'to': [
