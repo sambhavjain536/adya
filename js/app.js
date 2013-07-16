@@ -778,18 +778,6 @@ App.Tour.FIXTURES = [];
 
 App.Video.FIXTURES = [
   {
-    id: 1,
-    title: 'Radio Spot',
-    thumbnail: 'images/video-classic-1-radio.jpg',
-    album: 1
-  },
-  {
-    id: 2,
-    title: 'TV Spot',
-    thumbnail: 'images/video-classic-1-tv.jpg',
-    album: 1
-  },
-  {
     id: 3,
     title: 'TV Clip (LIVE)',
     thumbnail: 'images/video-classic-1-live.jpg',
@@ -797,35 +785,11 @@ App.Video.FIXTURES = [
     album: 1
   },
   {
-    id: 11,
-    title: 'Radio Spot',
-    thumbnail: 'images/video-classic-2-radio.jpg',
-    album: 2
-  },
-  {
-    id: 12,
-    title: 'TV Spot',
-    thumbnail: 'images/video-classic-2-tv.jpg',
-    album: 2
-  },
-  {
     id: 13,
     title: 'TV Clip (LIVE)',
     thumbnail: 'images/video-classic-2-live.jpg',
     src: 'http://www.youtube.com/watch?v=tiCsEsVSSHs',
     album: 2
-  },
-  {
-    id: 21,
-    title: 'Radio Spot',
-    thumbnail: 'images/video-classic-special-radio.jpg',
-    album: 3
-  },
-  {
-    id: 22,
-    title: 'Single Spot',
-    thumbnail: 'images/video-classic-special-single.jpg',
-    album: 3
   },
   {
     id: 23,
@@ -840,6 +804,30 @@ App.Video.FIXTURES = [
     thumbnail: 'images/video-classic-3-opera.jpg',
     src: 'http://vimeo.com/69101584',
     album: 5
+  },
+  {
+    id: 41,
+    title: 'Medley 29.06.2013',
+    thumbnail: 'videos/41-thumb.jpg',
+    src: 'http://vimeo.com/69424318'
+  },
+  {
+    id: 42,
+    title: 'Medley 02.06.2012',
+    thumbnail: 'videos/42-thumb.jpg',
+    src: 'http://www.youtube.com/watch?v=qnK1uVQyvKI'
+  },
+  {
+    id: 43,
+    title: 'Medley 2011',
+    thumbnail: 'videos/43-thumb.jpg',
+    src: 'http://www.youtube.com/watch?v=_UFcL-FfRaI'
+  },
+  {
+    id: 44,
+    title: '',
+    thumbnail: 'videos/44-thumb.jpg',
+    src: 'http://www.youtube.com/watch?v=1UZfanXM3zs'
   }
 ];
 
