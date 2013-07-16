@@ -258,9 +258,9 @@ App.Message = Ember.Object.extend({
         'from_name': this.get('name'),
         'to': [
           {
-          'email': 'ayrton.decraene@gmail.com', //mousemusic@yucom.be
-          'name': 'Ayrton De Craene' //Mouse Music
-        }
+            'email': 'mousemusic@yucom.be',
+            'name': 'Mouse Music'
+          }
         ],
         'headers': {
           'Reply-To': this.get('email')
