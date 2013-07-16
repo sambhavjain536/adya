@@ -848,66 +848,124 @@ App.Photo.FIXTURES = [
     id: 1,
     thumbnail: 'photos/1-thumb.jpg',
     src: 'photos/1.jpg',
+    album: 1
   },
   {
     id: 2,
-    thumbnail: 'photos/1-thumb.jpg',
-    src: 'photos/1.jpg',
+    thumbnail: 'photos/2-thumb.jpg',
+    src: 'photos/2.jpg',
+    album: 1
   },
   {
     id: 3,
-    thumbnail: 'photos/1-thumb.jpg',
-    src: 'photos/1.jpg',
+    thumbnail: 'photos/3-thumb.jpg',
+    src: 'photos/3.jpg',
+    album: 1
   },
   {
     id: 4,
-    thumbnail: 'photos/1-thumb.jpg',
-    src: 'photos/1.jpg',
+    thumbnail: 'photos/4-thumb.jpg',
+    src: 'photos/4.jpg',
+    album: 1
   },
   {
     id: 5,
-    thumbnail: 'photos/1-thumb.jpg',
-    src: 'photos/1.jpg',
+    thumbnail: 'photos/5-thumb.jpg',
+    src: 'photos/5.jpg',
+    album: 1
   },
   {
     id: 6,
-    thumbnail: 'photos/1-thumb.jpg',
-    src: 'photos/1.jpg',
+    thumbnail: 'photos/6-thumb.jpg',
+    src: 'photos/6.jpg',
+    album: 1
+  },
+  {
+    id: 7,
+    thumbnail: 'photos/7-thumb.jpg',
+    src: 'photos/7.jpg',
+    album: 1
+  },
+  {
+    id: 8,
+    thumbnail: 'photos/8-thumb.jpg',
+    src: 'photos/8.jpg',
+    album: 1
+  },
+  {
+    id: 9,
+    thumbnail: 'photos/9-thumb.jpg',
+    src: 'photos/9.jpg',
+    album: 1
+  },
+  {
+    id: 10,
+    thumbnail: 'photos/10-thumb.jpg',
+    src: 'photos/10.jpg',
+    album: 1
   },
   {
     id: 11,
-    thumbnail: 'images/photo-classic-2.jpg',
-    src: 'photos/1.jpg',
+    thumbnail: 'photos/11-thumb.jpg',
+    src: 'photos/11.jpg',
+    album: 1
+  },
+  {
+    id: 21,
+    thumbnail: 'photos/21-thumb.jpg',
+    src: 'photos/21.jpg',
     album: 2
   },
   {
-    id: 12,
-    thumbnail: 'images/photo-classic-2.jpg',
-    src: 'photos/1.jpg',
+    id: 22,
+    thumbnail: 'photos/22-thumb.jpg',
+    src: 'photos/22.jpg',
     album: 2
   },
   {
-    id: 13,
-    thumbnail: 'images/photo-classic-2.jpg',
-    src: 'photos/1.jpg',
+    id: 23,
+    thumbnail: 'photos/23-thumb.jpg',
+    src: 'photos/23.jpg',
     album: 2
   },
   {
-    id: 14,
-    thumbnail: 'images/photo-classic-2.jpg',
-    src: 'photos/1.jpg',
+    id: 24,
+    thumbnail: 'photos/24-thumb.jpg',
+    src: 'photos/24.jpg',
     album: 2
   },
   {
-    id: 15,
-    thumbnail: 'images/photo-classic-2.jpg',
-    src: 'photos/1.jpg',
+    id: 25,
+    thumbnail: 'photos/25-thumb.jpg',
+    src: 'photos/25.jpg',
     album: 2
   },
   {
-    id: 16,
-    thumbnail: 'images/photo-classic-2.jpg',
-    src: 'photos/1.jpg',
+    id: 26,
+    thumbnail: 'photos/26-thumb.jpg',
+    src: 'photos/26.jpg',
     album: 2
+  },
+  {
+    id: 27,
+    thumbnail: 'photos/27-thumb.jpg',
+    src: 'photos/27.jpg',
+    album: 2
+  },
+  {
+    id: 28,
+    thumbnail: 'photos/28-thumb.jpg',
+    src: 'photos/28.jpg',
+    album: 2
+  },
+  {
+    id: 31,
+    thumbnail: 'photos/31-thumb.jpg',
+    src: 'photos/31.jpg',
+  },
+  {
+    id: 32,
+    thumbnail: 'photos/32-thumb.jpg',
+    src: 'photos/32.jpg',
   }
 ];
