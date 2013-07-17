@@ -115,12 +115,12 @@ App.AlbumController = Ember.ObjectController.extend({
   }.property(),
 
   trackLists: function() {
-    var tracks = this.get('model').get('tracks');
+    var tracks = this.get('model.tracks');
     var modulo = tracks.get('length') % 3;
     var divider = (tracks.get('length') - modulo) / 3 + 1;
 
     return [ tracks.slice(0, divider), tracks.slice(divider, divider * 2), tracks.slice(divider * 2, divider * 3) ];
-  }.property()
+  }.property('model.tracks')
 });
 
 App.DownloadsPhotosController = Ember.ArrayController.extend({
@@ -268,7 +268,7 @@ App.Message = Ember.Object.extend({
         'important': true
       }
     }
-  }.property('apiKey', 'body', 'subject', 'email', 'name'),
+  }.property('apiKey', 'formattedSubject', 'formattedBody', 'email', 'name'),
 
   send: function() {
     var jqxhr = $.post('https://mandrillapp.com/api/1.0//messages/send.json', this.get('options'));
