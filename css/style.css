@@ -518,6 +518,7 @@ ol#photos {
 ol#videos li,
 ol#photos li {
   float: left;
+  height: 155px;
   list-style: none;
   margin: 0 10px 27px 10px;
   width: 220px;
