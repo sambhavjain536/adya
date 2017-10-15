@@ -30,8 +30,8 @@ App.IndexRoute = Ember.Route.extend({
   },
 
   setupHeroController: function() {
-    var classic_three = App.Album.find(5);
-    this.controllerFor("hero").set("model", classic_three);
+    var classic_four = App.Album.find(6);
+    this.controllerFor("hero").set("model", classic_four);
   },
 
   setupToursController: function() {
@@ -395,6 +395,43 @@ App.Album.FIXTURES = [
     ],
     amazon: "http://www.amazon.de/Classic-3-Opera-Adya/dp/B00D4D5PC8",
     itunes: "https://itunes.apple.com/be/album/adya-classic-3/id653472088"
+  },
+  {
+    id: 6,
+    title: "Classic 4",
+    tracks: [
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150
+    ],
+    amazon: "https://www.amazon.de/Adya-Classic-4/dp/B0753S9W3N/"
   }
 ];
 
@@ -891,6 +928,170 @@ App.Track.FIXTURES = [
     bestseller: true,
     itunes:
       "https://itunes.apple.com/be/album/adya-medley/id653472088?i=653472171"
+  },
+  {
+    id: 121,
+    title: "Die Lustige Witwe",
+    composer: "(Frans Lehàr) Ludwig Kg Doblinger Musik Verlag"
+  },
+  {
+    id: 122,
+    title: "Strangers in the Night",
+    composer: "(Berthold Kaempfert) Roosevelt/Champion Music"
+  },
+  {
+    id: 123,
+    title: "Swan Lake III - Spanish Dance, Pt. 6",
+    composer: "(Pyotr Ilyich Tchaikovsky – Trad. Adapt. ADYA) Mouse Music Co."
+  },
+  {
+    id: 124,
+    title: "My Sarie Marais",
+    composer: "(Trad. Adapt. Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 125,
+    title: "Morst et Vita - Judex",
+    composer:
+      "(Charles François Gounod – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 126,
+    title: "Flower Duet - Lakme Opera",
+    composer: "(Léo Delibes – Trad. Adapt. ADYA) Mouse Music Co."
+  },
+  {
+    id: 127,
+    title: "Prince Igor - The Polovtsian Dances",
+    composer:
+      "(Alexander Borodin – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 128,
+    title: "Rhapsody on a Theme of Paganini - Opus 43",
+    composer:
+      "(Sergei Rachmaninoff – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 129,
+    title: "New World Symphony No. 9 in E Minor",
+    composer:
+      "(Antonin Dvoràk – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 130,
+    title: "Horn Concerto No. 1 in D Major - K. 412 II. Rondo Allegro",
+    composer: "(Wolfgang Amadeus Mozart - Trad. Adapt. ADYA) Mouse Music Co."
+  },
+  {
+    id: 131,
+    title: "Spanish Harlem",
+    composer:
+      "(Jerry Leiber/Phil Spector) Abkco Music Ltd./EMI Music Publishing"
+  },
+  {
+    id: 132,
+    title: "Marie Louise",
+    composer: "(Armath) BMG Ariola/Rover Music."
+  },
+  {
+    id: 133,
+    title: "Love Is ...",
+    composer: "(ADYA) Mouse Music Co."
+  },
+  {
+    id: 134,
+    title: "Matthaus-Passion - Mach Dich, Meine Herze, Rein",
+    composer: "(Johann Sebastian Bach – Trad. Adapt. ADYA) Mouse Music Co."
+  },
+  {
+    id: 135,
+    title: "Halleluyah – Chorus Of The Messiah Part III",
+    composer: "(Georg Friedrich Händel – Trad. Adapt. ADYA) Mouse Music Co."
+  },
+  {
+    id: 136,
+    title: "4 Themes Ouverture - Passion, Tenderness, Romance, Love",
+    composer: "(ADYA) Mouse Music Co."
+  },
+  {
+    id: 137,
+    title: "Take Me for a Ride - Villa Rides",
+    composer: "(Maurice-Alexis Jarre) Sony Atv Harmony"
+  },
+  {
+    id: 138,
+    title: "Cherubino's Aria - Djbom Mix",
+    composer:
+      "Non so piu cosa son cosa faccio – From “The Marriage of Figaro” Opera (Wolfgang Amadeus Mozart – Trad. Adapt: ADYA) Mouse Music Co."
+  },
+  {
+    id: 139,
+    title: "Anonymous Romance",
+    composer: "(Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 140,
+    title: "Summertime Aria - Porgy And Bess Opera",
+    composer: "(George Gershwin) Warner/Chappell Music"
+  },
+  {
+    id: 141,
+    title: "Harp Concerto 2017 - Alegro in Bb",
+    composer:
+      "(Georg Friedrich Händel – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 142,
+    title: "Ruslan and Ludmilla 2017 - Ouverture",
+    composer:
+      "(Michail Ivanovich Glinka – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 143,
+    title: "Alhambra 2017",
+    composer:
+      "(Francisco Tàrrega Eixea – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 144,
+    title: "Swan Lake 2017",
+    composer:
+      "(Pyotr Ilyich Tchaikovsky – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 145,
+    title: "Anna Magdalena",
+    composer:
+      "(Johann Sebastian Bach – Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 146,
+    title: "Mull of Kintyre",
+    composer:
+      "(Paul McCartney & Denny Laine) McCartney Music/EMI Music Publishing"
+  },
+  {
+    id: 147,
+    title: "Winter Wonderland",
+    composer: "(Trad. Adapt. ADYA) Mouse Music Co."
+  },
+  {
+    id: 148,
+    title: "Wiegenlied",
+    composer:
+      "(Johannes Brahms – Trad. Adapt Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 149,
+    title: "Silent Night",
+    composer:
+      "(Franz Xaver Gruber – Trad. Adapt Phil Sterman/Edwig Abrath) Mouse Music Co."
+  },
+  {
+    id: 150,
+    title: "Adeste Fideles/Gloria in Excelsis Deo",
+    composer: "(Trad. Adapt. Phil Sterman/Edwig Abrath) Mouse Music Co."
   }
 ];
 
