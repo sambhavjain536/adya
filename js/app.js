@@ -431,7 +431,8 @@ App.Album.FIXTURES = [
       149,
       150
     ],
-    amazon: "https://www.amazon.de/Adya-Classic-4/dp/B0753S9W3N/"
+    amazon: "https://www.amazon.de/Adya-Classic-4/dp/B0753S9W3N/",
+    itunes: "https://itunes.apple.com/be/album/classic-4/id1272721675"
   }
 ];
 

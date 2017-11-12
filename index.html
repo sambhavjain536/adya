@@ -56,7 +56,15 @@
       <p>Latest critically acclaimed album from <strong>Adriaan Van Landschoot</strong>.</p>
 
       <div class="call-to-action">
-        <a {{bindAttr href="amazon"}}><img src="images/amazon.png" alt="LISTEN ON AMAZON" /></a>
+        <a {{bindAttr href="amazon"}} target="_blank">
+          <img src="images/amazon.png" alt="LISTEN ON AMAZON" />
+        </a>
+
+        <span>OR</span>
+
+        <a {{bindAttr href="itunes"}} target="_blank">
+          <img src="images/itunes.png" alt="LISTEN ON iTUNES" />
+        </a>
       </div>
     </section>
   </script>
