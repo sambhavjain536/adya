@@ -130,18 +130,14 @@
       <ol>
       {{#each album in model itemController="topSinglesAlbum"}}
         <li>
-          <img {{bindAttr src="album.coverImage"}} />
+          <h2>{{album.title}}</h2>
+
           <ul>
           {{#each track in album.topTracks}}
             <li>
               <a {{bindAttr href="track.itunes"}} target="_blank">
-                <div class="left">
-                  <h2>{{track.title}}</h2>
-                  <p>{{track.composer}}</p>
-                </div>
-                <div class="right">
-                  <span>0.99€</span>
-                </div>
+                <h3>{{track.title}}</h3>
+                <p>{{track.composer}}</p>
               </a>
             </li>
           {{/each}}
